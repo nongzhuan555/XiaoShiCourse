@@ -1,0 +1,56 @@
+// 该页面中不能用uniscss中的变量
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationStyle": "custom" ,// 即取消默认导航栏
+				"navigationBarTitleText": "小石课表"
+			}
+		},
+		{
+			"path" : "pages/attendance/attendance",
+			"style" : 
+			{
+				// "navigationStyle": "custom"
+				"navigationBarTitleText": "出勤记录"
+			}
+		},
+		{
+			"path" : "pages/person/person",
+			"style" : 
+			{
+				// "navigationStyle": "custom"
+				"navigationBarTitleText": "个人页面"
+			}
+		}
+	],
+	// 全局页面样式
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},"tabBar": {
+		"color": "#F6D8AE",
+		"selectedColor": "#ff7e00",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "56px",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/icons/tabBar/table0.png",
+			"selectedIconPath": "static/icons/tabBar/table1.png",
+			"text": "课表"
+		}, {
+			"pagePath": "pages/attendance/attendance",
+			"iconPath": "static/icons/tabBar/attendance0.png",
+			"selectedIconPath": "static/icons/tabBar/attendance1.png",
+			"text": "出勤"
+		}, {
+			"pagePath": "pages/person/person",
+			"iconPath": "static/icons/tabBar/person0.png",
+			"selectedIconPath": "static/icons/tabBar/person1.png",
+			"text": "我的"
+		}]
+	}
+}
